@@ -1,50 +1,8 @@
-# Welcome to your Expo app 👋
+# Input  
+The application begins with a simple input interface where users can type in a to-do task. The input field accepts a text string and is connected to the application's internal state using React’s `useState` hook. Upon entering a task, the user can click the "Submit" button to add it to the task list.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Process  
+When a user submits a task, the app creates a new task object and stores it in an array of tasks maintained in the state. Each task can be marked as "Done" or removed entirely via the "Delete" button. The task list is dynamically rendered based on the state. Button actions are handled via event-driven functions that modify the state accordingly. The app also categorizes tasks into All, Active, or Complete (if implemented).
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Output  
+The UI reflects real-time updates of the to-do list. Tasks are displayed below the input field with their status and action buttons. The app logs task actions in the console for debugging.
